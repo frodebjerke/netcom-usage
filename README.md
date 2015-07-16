@@ -1,7 +1,16 @@
 # netcom-usage - under development, not finished.
 
+## Usage
+### Environment variables
+
+#### TARGET_SITE
+`default: http://netcom.no/mbb-refill`
+
+#### USAGE_LOG_FILE
+Full path to usage log file placement.
+`default: 'usage.log'`
+
 ## TODO
-- log results
 - add metadata (period start, timestamp)
 - Slack integration
   - get last measure

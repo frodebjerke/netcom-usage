@@ -10,7 +10,7 @@ co(function* () {
 })
 .then(function (res) {
     console.log('STEP 2: Log to file');
-    const usageLogger = log.getUsageLogger(config.usageLog);
+    const usageLogger = log.getUsageLogger(config.usageLogFile);
     usageLogger(res.dataleft + 'MB left', res);
     return res;
 })
