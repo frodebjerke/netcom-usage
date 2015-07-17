@@ -1,11 +1,11 @@
 {
   "name": "netcom-usage",
   "version": "0.0.1",
-  "description": "Takes samples of how much data you have used on Netcoms 4G broadband.",
-  "main": "index.js",
+  "description": "Takes samples of how much data you have used on your Netcom 4G broadband.",
   "scripts": {
     "test": "echo 'no tests'",
-    "start": "node --harmony index.js"
+    "scrape": "node --harmony scrape.js",
+    "server": "node --harmony server.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,9 @@
   "dependencies": {
     "cheerio": "^0.19.0",
     "co": "^4.6.0",
+    "express": "^4.13.1",
     "lodash": "^3.10.0",
+    "morgan": "^1.6.1",
     "superagent": "^1.2.0",
     "winston": "^1.0.1"
   }
