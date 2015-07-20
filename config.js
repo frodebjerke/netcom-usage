@@ -12,7 +12,8 @@ module.exports = {
     },
 
     db: {
-        host: process.env.RETHINK_URL || 'localhost',
+        host: process.env.RETHINKDB_HOST || 'localhost',
+        port: process.env.RETHINKDB_PORT || 28015,
         name: process.env.RETHINK_NAME || 'netcom_usage'
     }
 }
