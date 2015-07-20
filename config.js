@@ -4,7 +4,7 @@ module.exports = {
         targetSite: process.env.TARGET_SITE || 'netcom.no/mbb-refill',
         serverUrl: process.env.SERVER_URL || 'localhost:3000',
         usageLogFile: process.env.USAGE_LOG_FILE || 'usage.log',
-        networkId: process.env.networkId || 'test'
+        networkId: process.env.NETCOM_NETWORKID || 'test'
     },
 
     server: {
