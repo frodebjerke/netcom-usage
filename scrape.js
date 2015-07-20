@@ -10,7 +10,7 @@ const errorLogger = logger.error;
 co(function* () {
     infoLogger('STEP 1: Fetch and extract');
     const dataleft = yield scraper.scrape(config.targetSite);
-    return {dataleft: dataleft};
+    return { dataleft: dataleft, networkId: config.networkId, timestamp: new Date().toISOString() };
 })
 .then(function (res) {
     infoLogger('STEP 2: Log to file');
@@ -22,11 +22,11 @@ co(function* () {
     infoLogger('STEP 3: Post to server');
     return co(function* () {
         const _client = new UsageClient({url: config.serverUrl});
-        yield _client.send(res);
+        return yield _client.send(res);
     });
 })
 .then(function (res) {
-    infoLogger('Success:', res);
+    infoLogger('Success:', res.body);
 })
 .catch(function (error) {
     errorLogger('Failure:', error);
