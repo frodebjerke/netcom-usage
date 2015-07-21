@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo 'no tests'",
     "scrape": "node --harmony scrape.js",
-    "server": "node --harmony server.js"
+    "server": "node --harmony server.js",
+    "generate": "node --harmony testdatagenerator.js"
   },
   "repository": {
     "type": "git",
