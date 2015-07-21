@@ -1,3 +1,5 @@
+#!/usr/bin/env node --harmony
+
 const co = require('co');
 const scraper = require('./lib/scraper');
 const log = require('./lib/logging');
