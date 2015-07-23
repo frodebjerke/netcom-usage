@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    if !error
+        p Current status for network with id: #{networkName}
+        h2 #{dataleft}
+        p Last sample: #{timeSinceSample} ago
