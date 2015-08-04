@@ -3,5 +3,8 @@ extends layout
 block content
     if !error
         p Current status for network with id: #{networkName}
-        h2 #{dataleft}
         p Last sample: #{timeSinceSample} ago
+        h2 #{dataleft}
+        p Used since midnight #{usedSinceMidnight}
+        p Explore raw data 
+            a(href="/usage/#{networkName}") here
