@@ -2,13 +2,18 @@ doctype html
 html
   head
     title= title
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css")
+    link(rel="stylesheet" href="/static/style.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
   body
-
     header
-        h1 Usage statistics - netcom 4G broadband
+        h2(class="container") Netcom 4G Usage monitor
+        div(class="divider")
 
-    section
+    main
       block content
 
-    footer
-      a(href="https://github.com/frodetbj/netcom-usage") Github
+    footer(class="page-footer")
+      div(class="container")
+        a(href="https://github.com/frodetbj/netcom-usage")
+          img(src="/static/github.png" title="Github")
