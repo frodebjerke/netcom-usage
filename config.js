@@ -4,7 +4,7 @@ module.exports = {
 
     scraper: {
         targetSite: process.env.TARGET_SITE || 'netcom.no/mbb-refill',
-        serverUrl: argv.server || process.env.SERVER_URL || 'localhost:3000',
+        serverUrl: argv.server || process.env.SERVER_URL || 'http://127.0.0.1:3009',
         usageLogFile: argv.usageLog || process.env.USAGE_LOG_FILE || 'usage.log',
         logFile: argv.logFile || process.env.LOG_FILE || 'netcom-usage-scraper.log',
         logLevel: argv.logLevel || process.env.LOG_LEVEL || 'info',
@@ -12,7 +12,7 @@ module.exports = {
     },
 
     server: {
-        port: process.env.PORT || 3000,
+        port: process.env.PORT || 3009,
         adminToken: process.env.ADMIN_TOKEN || 'stupid'
     },
 
