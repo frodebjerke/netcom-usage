@@ -11,7 +11,6 @@ block content
                         h3 #{networkName}
                     div(class="card-action")
                         a(href="/usage/#{networkName}") Access raw data
-                        a(href="/#{networkName}/daily-history") See history by day
             div(class="col s12 m6 l4")
                 div(class="card")
                     div(class="card-content")
@@ -36,6 +35,9 @@ block content
                         p(class="typo-info") Total usage per day
                         each day in usedLastWeek
                             p #{day.day}: #{day.used}
+
+                    div(class="card-action")
+                        a(href="/#{networkName}/daily-history") See current month
 
             div(class="col s12 m6 l4")
                 div(class="card")
