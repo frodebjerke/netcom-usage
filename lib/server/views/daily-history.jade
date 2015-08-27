@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    div(class="container")
+        table
+            thead
+                tr
+                    th(data-field="date") date
+                    th(data-field="dataleft") dataleft
+                    th(data-field="dataused") dataused
+            tbody
+                each daily in history
+                    tr
+                        td #{daily.date}
+                        td #{daily.dataleft} MB
+                        td #{daily.dataUsed} MB
