@@ -1,3 +1,6 @@
+## !!Not longer usable
+Netcom changed their system, making this tool useless. However I found pretty much the same overview over data usage as this tool provides in their app 'Mitt Netcom'.
+
 # netcom-usage
 Schematic overview over the entire system:
 ```
